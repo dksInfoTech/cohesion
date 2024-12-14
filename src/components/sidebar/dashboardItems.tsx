@@ -1,18 +1,18 @@
 import { SidebarItemsType } from "../../types/sidebar";
 
 import {
-  BookOpen,
+  // BookOpen,
   Briefcase,
   Calendar,
   CheckSquare,
   CreditCard,
-  Grid,
-  Heart,
+  // Grid,
+  // Heart,
   Layout,
-  List,
-  Map,
+  // List,
+  // Map,
   ShoppingCart,
-  PieChart,
+  // PieChart,
   Sliders,
   Users,
 } from "react-feather";
@@ -24,7 +24,7 @@ const pagesSection = [
     title: "Dashboard",
     children: [
       {
-        href: "/dashboard/default",
+        href: "/dashboard",
         title: "Default",
       },
       {
@@ -107,7 +107,7 @@ const pagesSection = [
     title: "Auth",
     children: [
       {
-        href: "/auth/sign-in",
+        href: "/",
         title: "Sign In",
       },
       {
@@ -130,194 +130,194 @@ const pagesSection = [
   },
 ] as SidebarItemsType[];
 
-const elementsSection = [
-  {
-    href: "/components",
-    icon: Grid,
-    title: "Components",
-    children: [
-      {
-        href: "/components/alerts",
-        title: "Alerts",
-      },
-      {
-        href: "/components/accordion",
-        title: "Accordion",
-      },
-      {
-        href: "/components/avatars",
-        title: "Avatars",
-      },
-      {
-        href: "/components/badges",
-        title: "Badges",
-      },
-      {
-        href: "/components/buttons",
-        title: "Buttons",
-      },
-      {
-        href: "/components/cards",
-        title: "Cards",
-      },
-      {
-        href: "/components/chips",
-        title: "Chips",
-      },
-      {
-        href: "/components/dialogs",
-        title: "Dialogs",
-      },
-      {
-        href: "/components/lists",
-        title: "Lists",
-      },
-      {
-        href: "/components/menus",
-        title: "Menus",
-      },
-      {
-        href: "/components/pagination",
-        title: "Pagination",
-      },
-      {
-        href: "/components/progress",
-        title: "Progress",
-      },
-      {
-        href: "/components/snackbars",
-        title: "Snackbars",
-      },
-      {
-        href: "/components/tooltips",
-        title: "Tooltips",
-      },
-    ],
-  },
-  {
-    href: "/charts",
-    icon: PieChart,
-    title: "Charts",
-    children: [
-      {
-        href: "/charts/chartjs",
-        title: "Chart.js",
-      },
-      {
-        href: "/charts/apexcharts",
-        title: "ApexCharts",
-      },
-    ],
-  },
-  {
-    href: "/forms",
-    icon: CheckSquare,
-    title: "Forms",
-    children: [
-      {
-        href: "/forms/pickers",
-        title: "Pickers",
-      },
-      {
-        href: "/forms/selection-controls",
-        title: "Selection Controls",
-      },
-      {
-        href: "/forms/selects",
-        title: "Selects",
-      },
-      {
-        href: "/forms/text-fields",
-        title: "Text Fields",
-      },
-      {
-        href: "/forms/editors",
-        title: "Editors",
-      },
-      {
-        href: "/forms/formik",
-        title: "Formik",
-      },
-    ],
-  },
-  {
-    href: "/tables",
-    icon: List,
-    title: "Tables",
-    children: [
-      {
-        href: "/tables/simple-table",
-        title: "Simple Table",
-      },
-      {
-        href: "/tables/advanced-table",
-        title: "Advanced Table",
-      },
-      {
-        href: "/tables/data-grid",
-        title: "Data Grid",
-      },
-    ],
-  },
-  {
-    href: "/icons",
-    icon: Heart,
-    title: "Icons",
-    children: [
-      {
-        href: "/icons/material-icons",
-        title: "Material Icons",
-      },
-      {
-        href: "/icons/feather-icons",
-        title: "Feather Icons",
-      },
-    ],
-  },
-  {
-    href: "/maps",
-    icon: Map,
-    title: "Maps",
-    children: [
-      {
-        href: "/maps/google-maps",
-        title: "Google Maps",
-      },
-      {
-        href: "/maps/vector-maps",
-        title: "Vector Maps",
-      },
-    ],
-  },
-] as SidebarItemsType[];
+// const elementsSection = [
+//   {
+//     href: "/components",
+//     icon: Grid,
+//     title: "Components",
+//     children: [
+//       {
+//         href: "/components/alerts",
+//         title: "Alerts",
+//       },
+//       {
+//         href: "/components/accordion",
+//         title: "Accordion",
+//       },
+//       {
+//         href: "/components/avatars",
+//         title: "Avatars",
+//       },
+//       {
+//         href: "/components/badges",
+//         title: "Badges",
+//       },
+//       {
+//         href: "/components/buttons",
+//         title: "Buttons",
+//       },
+//       {
+//         href: "/components/cards",
+//         title: "Cards",
+//       },
+//       {
+//         href: "/components/chips",
+//         title: "Chips",
+//       },
+//       {
+//         href: "/components/dialogs",
+//         title: "Dialogs",
+//       },
+//       {
+//         href: "/components/lists",
+//         title: "Lists",
+//       },
+//       {
+//         href: "/components/menus",
+//         title: "Menus",
+//       },
+//       {
+//         href: "/components/pagination",
+//         title: "Pagination",
+//       },
+//       {
+//         href: "/components/progress",
+//         title: "Progress",
+//       },
+//       {
+//         href: "/components/snackbars",
+//         title: "Snackbars",
+//       },
+//       {
+//         href: "/components/tooltips",
+//         title: "Tooltips",
+//       },
+//     ],
+//   },
+//   {
+//     href: "/charts",
+//     icon: PieChart,
+//     title: "Charts",
+//     children: [
+//       {
+//         href: "/charts/chartjs",
+//         title: "Chart.js",
+//       },
+//       {
+//         href: "/charts/apexcharts",
+//         title: "ApexCharts",
+//       },
+//     ],
+//   },
+//   {
+//     href: "/forms",
+//     icon: CheckSquare,
+//     title: "Forms",
+//     children: [
+//       {
+//         href: "/forms/pickers",
+//         title: "Pickers",
+//       },
+//       {
+//         href: "/forms/selection-controls",
+//         title: "Selection Controls",
+//       },
+//       {
+//         href: "/forms/selects",
+//         title: "Selects",
+//       },
+//       {
+//         href: "/forms/text-fields",
+//         title: "Text Fields",
+//       },
+//       {
+//         href: "/forms/editors",
+//         title: "Editors",
+//       },
+//       {
+//         href: "/forms/formik",
+//         title: "Formik",
+//       },
+//     ],
+//   },
+//   {
+//     href: "/tables",
+//     icon: List,
+//     title: "Tables",
+//     children: [
+//       {
+//         href: "/tables/simple-table",
+//         title: "Simple Table",
+//       },
+//       {
+//         href: "/tables/advanced-table",
+//         title: "Advanced Table",
+//       },
+//       {
+//         href: "/tables/data-grid",
+//         title: "Data Grid",
+//       },
+//     ],
+//   },
+//   {
+//     href: "/icons",
+//     icon: Heart,
+//     title: "Icons",
+//     children: [
+//       {
+//         href: "/icons/material-icons",
+//         title: "Material Icons",
+//       },
+//       {
+//         href: "/icons/feather-icons",
+//         title: "Feather Icons",
+//       },
+//     ],
+//   },
+//   {
+//     href: "/maps",
+//     icon: Map,
+//     title: "Maps",
+//     children: [
+//       {
+//         href: "/maps/google-maps",
+//         title: "Google Maps",
+//       },
+//       {
+//         href: "/maps/vector-maps",
+//         title: "Vector Maps",
+//       },
+//     ],
+//   },
+// ] as SidebarItemsType[];
 
-const docsSection = [
-  {
-    href: "/documentation/welcome",
-    icon: BookOpen,
-    title: "Documentation",
-  },
-  {
-    href: "/changelog",
-    icon: List,
-    title: "Changelog",
-    badge: "v4.5.0",
-  },
-] as SidebarItemsType[];
+// const docsSection = [
+//   {
+//     href: "/documentation/welcome",
+//     icon: BookOpen,
+//     title: "Documentation",
+//   },
+//   {
+//     href: "/changelog",
+//     icon: List,
+//     title: "Changelog",
+//     badge: "v4.5.0",
+//   },
+// ] as SidebarItemsType[];
 
 const navItems = [
   {
     title: "Pages",
     pages: pagesSection,
   },
-  {
-    title: "Elements",
-    pages: elementsSection,
-  },
-  {
-    title: "Credit Pro",
-    pages: docsSection,
-  },
+  // {
+  //   title: "Elements",
+  //   pages: elementsSection,
+  // },
+  // {
+  //   title: "Cohesion",
+  //   pages: docsSection,
+  // },
 ];
 
 export default navItems;

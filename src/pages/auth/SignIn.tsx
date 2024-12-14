@@ -2,17 +2,14 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Helmet } from "react-helmet-async";
 
-import { Avatar, Paper, Typography } from "@mui/material";
-
-import { ReactComponent as Logo } from "../../vendor/logo.svg";
+import { Paper, Typography, Stack } from "@mui/material";
 import SignInComponent from "../../components/auth/SignIn";
 
-const Brand = styled(Logo)`
-  fill: ${(props) => props.theme.palette.primary.main};
-  width: 64px;
-  height: 64px;
-  margin-bottom: 32px;
-`;
+// const BrandImage = styled("img")`
+//   margin-right: ${(props) => props.theme.spacing(2)};
+//   width: 80px;
+//   height: 90px;
+// `;
 
 const Wrapper = styled(Paper)`
   padding: ${(props) => props.theme.spacing(6)};
@@ -22,27 +19,20 @@ const Wrapper = styled(Paper)`
   }
 `;
 
-const BigAvatar = styled(Avatar)`
-  width: 92px;
-  height: 92px;
-  text-align: center;
-  margin: 0 auto ${(props) => props.theme.spacing(5)};
-`;
-
 function SignIn() {
   return (
     <React.Fragment>
-      <Brand />
       <Wrapper>
         <Helmet title="Sign In" />
-        <BigAvatar alt="Lucy" src="/static/img/avatars/avatar-1.jpg" />
 
-        <Typography component="h1" variant="h4" align="center" gutterBottom>
-          Welcome back, Lucy!
-        </Typography>
-        <Typography component="h2" variant="body1" align="center">
-          Sign in to your account to continue
-        </Typography>
+        <Stack justifyContent="center" alignItems="center" spacing={6}>
+          {/* <BrandImage src="/assets/logoa.png" alt="logoa" /> */}
+          <Typography component="h1" variant="h1">
+            Cohesion
+          </Typography>
+        </Stack>
+
+        {/* <BigAvatar alt="John" src="/static/img/avatars/john.jpg" /> */}
 
         <SignInComponent />
       </Wrapper>

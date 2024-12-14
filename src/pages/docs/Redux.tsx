@@ -57,7 +57,7 @@ function Introduction() {
       <Typography variant="subtitle1" gutterBottom my={4}>
         Redux helps you write applications that behave consistently, run in
         different environments (client, server, and native), and are easy to
-        test. Credit leverages{" "}
+        test. Cohesion leverages{" "}
         <Link
           href="https://redux-toolkit.js.org/"
           target="_blank"
@@ -78,7 +78,7 @@ function Usage() {
         Usage
       </Typography>
       <Typography variant="subtitle1" gutterBottom my={4}>
-      Credit contains the following folders/files to store any Redux related
+        Cohesion contains the following folders/files to store any Redux related
         logic:
         <ul>
           <li>

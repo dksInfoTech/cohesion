@@ -112,7 +112,7 @@ function InvoiceDetails() {
                       Payment To
                     </Typography>
                     <Typography variant="body2" align="right">
-                    Credit LLC
+                      Cohesion LLC
                       <br />
                       354 Roy Alley
                       <br />
@@ -140,7 +140,7 @@ function InvoiceDetails() {
                 <TableBody>
                   <TableRow>
                     <TableCell component="th" scope="row">
-                    Credit Theme Customization
+                      Cohesion Theme Customization
                     </TableCell>
                     <TableCell>2</TableCell>
                     <TableCell align="right">$150.00</TableCell>

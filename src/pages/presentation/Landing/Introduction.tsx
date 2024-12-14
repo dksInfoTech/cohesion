@@ -142,7 +142,6 @@ function Introduction() {
   return (
     <Wrapper>
       <Container>
-       
         <Grid container alignItems="center" justifyContent="center" spacing={4}>
           <Grid item xs={12} sm={10} md={9} lg={9}>
             <div
@@ -154,7 +153,7 @@ function Introduction() {
               <ImageWrapper>
                 <NavLink to="/dashboard/analytics" target="_blank">
                   <Image
-                    alt="Credit - React Admin"
+                    alt="Cohesion - React Admin"
                     src={`/static/img/screenshots/dashboard-analytics-large.jpg`}
                   />
                 </NavLink>

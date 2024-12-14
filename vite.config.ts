@@ -15,6 +15,19 @@ export default defineConfig({
       protocolImports: true,
     }),
   ],
+  preview: {
+    port: 80,
+    //port: 8080,
+    strictPort: true,
+  },
+  server: {
+    port: 80,
+    //port: 8080,
+    strictPort: true,
+    host: true,
+    //origin: "https://demo.argirotest.com.au",
+    origin: "http://localhost:80",
+  },
   build: {
     chunkSizeWarningLimit: 6000,
     rollupOptions: {

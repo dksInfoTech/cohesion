@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "@emotion/styled";
 import * as Yup from "yup";
 import { Formik } from "formik";
@@ -36,7 +36,7 @@ function ResetPassword() {
       onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
         try {
           resetPassword(values.email);
-          navigate("/auth/sign-in");
+          navigate("/");
         } catch (error: any) {
           const message = error.message || "Something went wrong";
 
@@ -81,6 +81,9 @@ function ResetPassword() {
             disabled={isSubmitting}
           >
             Reset password
+          </Button>
+          <Button sx={{ color: "white" }} fullWidth component={Link} to="/">
+            Back to sign in options
           </Button>
         </form>
       )}

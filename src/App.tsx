@@ -32,8 +32,8 @@ function App({ emotionCache = clientSideEmotionCache }) {
     <CacheProvider value={emotionCache}>
       <HelmetProvider>
         <Helmet
-          titleTemplate="%s | Credit"
-          defaultTitle="Credit - Admin Dashboard"
+          titleTemplate="%s | Cohesion"
+          defaultTitle="Cohesion - Admin Dashboard"
         />
         <Provider store={store}>
           <LocalizationProvider dateAdapter={AdapterDateFns}>

@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { green, grey, indigo } from "@mui/material/colors";
 import { Palette as PaletteIcon } from "@mui/icons-material";
 import {
   Alert,
   Box,
-  Button,
+  // Button,
   Drawer,
   Fab as MuiFab,
   Grid,
-  ListItemButton,
+  // ListItemButton,
   Typography,
 } from "@mui/material";
 
@@ -100,16 +100,16 @@ const Wrapper = styled.div`
   overflow-x: hidden;
 `;
 
-const Heading = styled(ListItemButton)`
-  font-size: ${(props) => props.theme.typography.h5.fontSize};
-  font-weight: ${(props) => props.theme.typography.fontWeightMedium};
-  font-family: ${(props) => props.theme.typography.fontFamily};
-  min-height: 56px;
+// const Heading = styled(ListItemButton)`
+//   font-size: ${(props) => props.theme.typography.h5.fontSize};
+//   font-weight: ${(props) => props.theme.typography.fontWeightMedium};
+//   font-family: ${(props) => props.theme.typography.fontFamily};
+//   min-height: 56px;
 
-  ${(props) => props.theme.breakpoints.up("sm")} {
-    min-height: 64px;
-  }
-`;
+//   ${(props) => props.theme.breakpoints.up("sm")} {
+//     min-height: 64px;
+//   }
+// `;
 
 type DemoTypes = {
   title: string;
@@ -137,7 +137,7 @@ function Demo({ title, themeVariant }: DemoTypes) {
 function Demos() {
   return (
     <Wrapper>
-      <Heading>Select a demo</Heading>
+      {/* <Heading>Select a demo</Heading> */}
 
       <Box px={4} my={3}>
         <Alert icon={false} severity="info">
@@ -157,7 +157,7 @@ function Demos() {
         </Grid>
       </Box>
 
-      <Box my={3} mx={4}>
+      {/* <Box my={3} mx={4}>
         <Button
           component={Link}
           to="/documentation/welcome"
@@ -168,10 +168,8 @@ function Demos() {
         >
           Documentation
         </Button>
-      </Box>
-      <Box my={3} mx={4}>
-       
-      </Box>
+      </Box> */}
+      <Box my={3} mx={4}></Box>
     </Wrapper>
   );
 }

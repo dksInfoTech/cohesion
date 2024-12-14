@@ -94,7 +94,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       <Brand component={NavLink as any} to="/">
         <BrandIcon />{" "}
         <Box ml={1}>
-        Credit <BrandChip label="PRO" />
+          Cohesion <BrandChip label="PRO" />
         </Box>
       </Brand>
       <SidebarNav items={items} />
